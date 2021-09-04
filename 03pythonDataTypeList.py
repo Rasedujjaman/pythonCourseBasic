@@ -26,5 +26,33 @@ print(my_list2 * 2)   # Print my_list2 two times
 
 
 # List concatenation 
+new_list = my_list + my_list2
+print(new_list)
 
-print(my_list + my_list2)    
+print(len(new_list))
+
+# Inserting a new elemet at a particular location
+# list.insert(index, obj)
+new_list.insert(3, 2001)
+print(new_list)
+
+new_list.insert(0, 'Hello')  # insert a new element at the first location 
+print(new_list)
+
+# Reverseing the list
+new_list.reverse()
+print(new_list)
+
+# pop out an element
+new_list.pop() # Pop out the last element
+print(new_list)
+
+# pop out 5th element
+new_list.pop(4)
+print(new_list)
+
+
+# Appending a new element at the end of the list
+# list.append(obj)
+new_list.append(131)
+print(new_list)

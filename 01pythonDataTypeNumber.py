@@ -40,6 +40,23 @@ print(f"Real part of z3 = {z3.real}")      # display the real part of the comple
 print(f"Imaginary part of z3 = {z3.imag}") # display the imaginary part of the complex number
 
 
+# Delete a variable or multiple variable
+
+print(f"The address of {z1} is {hex(id(z1))}")
+print(f"The address of {z2} is {hex(id(z2))}")
+print(f"The address of {z3} is {hex(id(z3))}")
+del z1, z2, z3  # All three variables z1, z2 and z3 are deleted
+# print(f"The address of {z1} is {hex(id(z1))}") # Invalid operatoin
+
+# Converting type
+print(your_cgpa)
+print(int(your_cgpa)) # Converting into integer type
+print(complex(your_cgpa)) # Converting into complex form float type
+
+# Converting into absolute value
+print(abs(your_cgpa))
+print(abs(-100))
+
 
 
 
