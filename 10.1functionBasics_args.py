@@ -1,6 +1,8 @@
 # Here we will learn how to define and use function that will accept any number of
 # numerical data (int, float) and return the summation of those numbers
 
+# In general the input data could be any type but here we consider only the numerical value
+
 # Problem statement: we know how to accept two numbers as
 # arguments and return the summation, now if we want to add
 # more than two numbers how can we do it?
