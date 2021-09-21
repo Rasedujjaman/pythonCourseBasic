@@ -23,10 +23,16 @@ def my_summation(*args):
     print(f"The summation is: {summation}")
     
     
-# Calling the function
+# Different ways to call the function
 my_summation(20, 20) # calculate the summation of two numbers
 my_summation(30, 12, 60)  # calculate the summation of three numbers
 my_summation(12, 32, 23, 44, 30, 100) # calculate the summation and display the results
+
+numbers = [23, 45, 67, 90]  # a list 
+my_summation(*numbers) # when we call the list we have to put star in the argumnets when calling the function
+
+numbers = (23, 45, 67, 90) # the tupple
+my_summation(*numbers)
 
 
 ### Note: 
