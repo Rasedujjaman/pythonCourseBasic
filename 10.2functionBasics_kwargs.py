@@ -1,4 +1,6 @@
 # Here we well learn how to pass a dictionary type arguments in a function
+# kwargs stands for keyword arguments
+
 
 def disp_infos(**kwargs): 
     
@@ -8,6 +10,7 @@ def disp_infos(**kwargs):
     
     for key, value in kwargs.items():
         print(f"Key: {key}, Value: {value}")
+        
 
     
     
@@ -22,4 +25,14 @@ disp_infos(**data) # when we pass the dictionary we need to put ** in the argume
 
 
 ### Note: 
-# Both ways of calling the function are identical
+# *args and **kwargs are used to define functions that take a varying number of input arguments. 
+# the single asterisk operator * can be used on any iterable that python provides, i.e. list, tupple etc, 
+# while the double asterisk operator ** can only be used on dictionaries. 
+
+# The correct order of arguments while difining the function
+#  def my_function(a, b, *args, **kwargs):
+#      pass 
+
+
+
+
