@@ -6,8 +6,9 @@ def disp_infos(**kwargs):
     
     
     # kwargs: is a place holder for any number of argumnets as key and value pairs
-    print(kwargs) # it displays all the argumnets as a dictionary
+    # print(kwargs) # it displays all the argumnets as a dictionary
     
+    print('Type kwargs: ', type(kwargs))  # Display the types of kwargs
     for key, value in kwargs.items():
         print(f"Key: {key}, Value: {value}")
         
@@ -15,12 +16,12 @@ def disp_infos(**kwargs):
     
     
 # Different ways to call the function
-disp_infos(name="Karim", age = 34, result=3.21)
+disp_infos(name="Karim", age = 34, result=3.21) # keyworded parameters are passed to the functions
 
 
 # Another way to call the function
-data = {"name": "Karim", "age": 34, "result":3.21}
-disp_infos(**data) # when we pass the dictionary we need to put ** in the argument
+# data = {"name": "Karim", "age": 34, "result":3.21}
+# disp_infos(**data) # when we pass the dictionary we need to put ** in the argument
 
 
 
